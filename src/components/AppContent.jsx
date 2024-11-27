@@ -20,7 +20,7 @@ function AppContent() {
       {/* Condicionalmente renderize o conteúdo com base no estado `currentPage` */}
       {currentPage === 'home' && (
         <>
-          {/* Se estiver na página inicial */}
+          
           <section className="main-section">
             <VideoBackground />
             <div className="overlay">

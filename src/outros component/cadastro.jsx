@@ -18,6 +18,10 @@ function Cadastro({ navigateTo }) {
           CPF:
           <input type="text" name="CPF" />
         </label>
+        <label>
+          Senha:
+          <input type="password" name="Senha"/>
+        </label>
         <button type="submit">Cadastrar</button>
       </form>
       <button onClick={() => navigateTo('home')}>Voltar para a Home</button>

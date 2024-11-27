@@ -1,3 +1,108 @@
+/* Reset global */
+:root {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+ 
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Botões globais */
+button {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  padding: 0.8em 1.5em;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: inherit;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+  background-color: #333;
+  border-color: #555;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Links */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #747bff;
+}
+
+/* Rodapé */
+footer {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: auto;
+}
+
 /* Reset básico */
 * {
   margin: 0;
@@ -122,4 +227,20 @@ body, html, .App {
   padding: 20px;
   text-align: center;
   font-size: 1.5rem;
+}
+/* Estilo para o vídeo de fundo */
+.background-video {
+  position: fixed; /* Fixa o vídeo na tela */
+  top: 0;
+  left: 0;
+  width: 100%; /* O vídeo ocupa toda a largura da tela */
+  height: 100%; /* O vídeo ocupa toda a altura da tela */
+  object-fit: cover; /* Faz o vídeo cobrir toda a tela sem distorcer */
+  z-index: -1; /* Garante que o vídeo fique atrás de outros conteúdos */
+}
+
+/* Certifique-se de que o conteúdo do vídeo (como o overlay) está acima dele */
+.overlay {
+  position: relative;
+  z-index: 1; /* Faz com que o conteúdo do overlay fique sobre o vídeo */
 }
